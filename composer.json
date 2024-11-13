@@ -1,0 +1,35 @@
+{
+    "name": "paulorlima9/laravel-env-set-command",
+    "description": "Set a .env file variable from the command line",
+    "homepage": "https://github.com/paulorlima9/laravel-env-set-command",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "illuminate/console": "^11.31",
+        "illuminate/support": "^11.31"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.4",
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "EnvironmentSetCommand\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EnvironmentSetCommand\\EnvironmentSetCommandServiceProvider"
+            ]
+        }
+    }
+}
